@@ -19,11 +19,7 @@ dependencies {
 ext['thymeleaf.version'] = '3.0.9.RELEASE'
 ext['thymeleaf-layout-dialect.version'] = '2.3.0'
 
-jar {
-    enabled = true
-    archiveName = "app.jar"
-}
-
 bootJar {
-    classifier = 'boot'
+    archiveName = 'app.jar'
+    launchScript()
 }
