@@ -9,7 +9,7 @@ public class IndexController {
 
     @GetMapping("/")
     public String index(Model model) {
-        model.addAttribute("message", "Hello Thymeleaf 3!!");
+        model.addAttribute("message", "適当にビールの画像を出します");
         return "index";
     }
 }
