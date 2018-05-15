@@ -2,7 +2,8 @@
 .idea
 *.iml
 target
-
+src/licenses/
+.vscode/
 # Eclipse
 .metadata
 .settings
