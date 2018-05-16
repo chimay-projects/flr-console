@@ -11,7 +11,7 @@ public class IndexController {
 
     @GetMapping("/")
     public String index(Model model) {
-        model.addAttribute("message", "適当にビールの画像を出");
+        model.addAttribute("message", "適当にビールの画像を出します");
 
         Random rndSeed = new Random();
         int imageIndex = rndSeed.nextInt(3);
