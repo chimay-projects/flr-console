@@ -13,10 +13,10 @@ public class IndexController {
     public String index(Model model) {
         model.addAttribute("message", "適当にビールの画像を出します!");
 
-        Random rndSeed = new Random();
-        int imageIndex = rndSeed.nextInt(3);
-        String imageURL = "https://s3-ap-northeast-1.amazonaws.com/beer-console-images/beer-" + Integer.toString(imageIndex) + ".jpg";
-        model.addAttribute("imageURL", imageURL);
+        // Random rndSeed = new Random();
+        // int imageIndex = rndSeed.nextInt(3);
+        // String imageURL = "https://s3-ap-northeast-1.amazonaws.com/beer-console-images/beer-" + Integer.toString(imageIndex) + ".jpg";
+        // model.addAttribute("imageURL", imageURL);
 
         return "index";
     }
