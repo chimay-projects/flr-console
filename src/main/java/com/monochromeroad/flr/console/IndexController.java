@@ -22,6 +22,8 @@ public class IndexController {
         descriptions.add("オルヴァル。ほかのトラピスト醸造所と違い、オルヴァル修道院が造っているビールはたった1種類だけ。敷地内にあるマチルドの泉には１０７６年にここを訪れたイタリアの伯爵夫人が結婚指輪を落とし、鱒がくわえて上がってきたという伝説が残っいる。");
         descriptions.add("よなよなエール。長野県の地ビールメーカー「株式会社ヤッホーブルーイング」(愛称・よなよなの里)によるビール銘柄の一つ。常温・短期間で発酵させて作るエール・ビールのうち「アメリカン・ペールエール」と呼ばれる種類に属する。");
 
+        model.addAttribute("environment", System.getenv("CURRENT_ENV"));
+
         model.addAttribute("message", "適当にビールの情報を出します!");
 
         Random rndSeed = new Random();
